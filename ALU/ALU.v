@@ -3,12 +3,12 @@
 
 module ALU( A, B, c_in, control_line, mode_select, out, c_out);
 
-input [7:0] A, B;    		//8 Bit input A and B
-input c_in;						//C in input 
+input [7:0] A, B;    	   //8 Bit input A and B
+input c_in;		   //C in input 
 input [2:0] control_line;  //3 Bit control line for selecting ALU operation
-input mode_select;  			//Mode = 1 = ARITHMETIC :: Mode = 0 = LOGICAL
+input mode_select;  	   //Mode = 1 = ARITHMETIC :: Mode = 0 = LOGICAL
 
-output reg c_out;				   //C out output for arithmetic 
+output reg c_out;	   //C out output for arithmetic 
 output reg [7:0] out;      //8 Bit output reg
 
 always@(*)
@@ -29,12 +29,12 @@ begin
     end
     else
     begin
-		 c_out = 0;   			//Keeping C out LOW in Logical Mode
+       c_out = 0;   	   //Keeping C out LOW in Logical Mode
        case(control_line)
             3'd0 :  out = A & B;
             3'd1 :  out = A | B; 
             3'd2 :  out = A ^ B;
-				3'd3 :  out = ~ (A | B);
+	    3'd3 :  out = ~ (A | B);
             3'd4 :  out = A << 2;
             3'd5 :  out = B << 2;
             3'd6 :  out = A >> 2;
