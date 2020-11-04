@@ -2,7 +2,7 @@
 
 - [Verilog Code](https://github.com/ombhilare999/8-Bit-ALU-implementation-on-CYCLONE-2/blob/main/ALU/ALU.v)
 - [Test Bench Code](https://github.com/ombhilare999/8-Bit-ALU-implementation-on-CYCLONE-2/blob/main/ALU/ALU_TB.v)
-
+- [Test Bench Code]https://github.com/ombhilare999/8-Bit-ALU-implementation-on-CYCLONE-2/tree/main/Assets/Omkar-Bhilare-8-Bit-ALU.pdf)
 ## Pin description:
 
 <p align="center">
